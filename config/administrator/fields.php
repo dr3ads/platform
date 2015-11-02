@@ -17,6 +17,11 @@ return array(
             'title' => 'Name',
             'select' => "(:table).name",
         ),
+
+        'type' => array(
+            'title' => 'Field Type',
+            'select' => "(:table).type",
+        ),
         
  
     ),
@@ -32,9 +37,9 @@ return array(
         ),
         */
         'title' => array(
-            'title' => 'Title',
-            'name_field' => 'title',
+            'title' => 'Field Name',
         ),
+
        
     ),
     /**
@@ -46,18 +51,20 @@ return array(
             'type' => 'text',
            
         ),
-        'payout' => array(
-            'type' => 'number',
-            'title' => 'Payout',
-            'symbol' => '$', //optional, defaults to ''
-            'decimals' => 2, //optional, defaults to 0
-            'thousands_separator' => ',', //optional, defaults to ','
-            'decimal_separator' => '.', //optional, defaults to '.'
+        
+        'type' => array(
+            'type' => 'enum',
+            'title' => 'Field Type',
+            'options' => array(
+                'text' => 'Text',
+                'textarea' => 'Textarea',
+                'select' => 'Select',
+            ),
         ),
-        'status' => array(
-            'type' => 'bool',
-            'title' => 'Active?',
-          
+        'options' => array(
+            'title' => 'Options',
+            'description' => 'Select options in JSON format',
+            'type' => 'textarea'
         ),
        
     ),
@@ -65,10 +72,9 @@ return array(
        /* 'first_name' => 'required',*/
         /*'email' => 'required|email|unique:users',*/
         'name' => 'required',
-        'payout' => 'required',
-        'status' => 'required'
+        'type' => 'required'
         
     ),
-    
+    'form_width' => 500,
    
 );

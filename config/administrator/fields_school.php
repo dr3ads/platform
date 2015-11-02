@@ -65,12 +65,7 @@ return array(
         'status' => array(
             'type' => 'bool',
             'title' => 'Active?',
-        ),
-        'fields' => array(
-            'type'=> 'relationship',
-            'title' => 'Form Fields',
-            'name_field' => 'name',
-            'options_sort_field' => 'name',
+          
         ),
        
     ),

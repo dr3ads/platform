@@ -13,4 +13,8 @@ class School extends Model
 	    return '$'.number_format($this->getAttribute('payout'), 2);
 	}
 
+	public function fields(){
+		return $this->BelongsToMany('Platform\Models\Field');
+	}
+
 }
