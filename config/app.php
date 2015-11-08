@@ -147,6 +147,10 @@ return [
 
         Bestmomo\Scafold\ScafoldServiceProvider::class,
         'Frozennode\Administrator\AdministratorServiceProvider',
+        'Teepluss\Theme\ThemeServiceProvider',
+        'Cviebrock\EloquentSluggable\SluggableServiceProvider',
+        'Collective\Html\HtmlServiceProvider',
+        'Lodge\Postcode\PostcodeServiceProvider',
 
     ],
 
@@ -196,7 +200,10 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-
+        'Theme' => 'Teepluss\Theme\Facades\Theme',
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
+        'Postcode' => 'Lodge\Postcode\Facades\Postcode',
     ],
 
 ];

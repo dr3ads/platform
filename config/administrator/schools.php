@@ -62,6 +62,11 @@ return array(
             'thousands_separator' => ',', //optional, defaults to ','
             'decimal_separator' => '.', //optional, defaults to '.'
         ),
+        'zipcode' => array(
+            'type' => 'text',
+            'title' => 'Zip Code',
+            'description' => 'School Location'
+        ),
         'status' => array(
             'type' => 'bool',
             'title' => 'Active?',

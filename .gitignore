@@ -6,3 +6,4 @@ Homestead.json
 composer.lock
 .idea
 .idea/*
+.DS_Store

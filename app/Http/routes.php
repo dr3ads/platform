@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('search', 'SearchController@DoSearch');
+Route::post('search', 'SearchController@PostSearch');
+Route::get('school/{id}', ['uses' => 'SchoolController@SchoolForm']);
+
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');

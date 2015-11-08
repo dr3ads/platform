@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a8505a2cd3e4c20e8d4abc7708a1574e",
-    "content-hash": "b7ce085a0ea26ce9b1e6114d5f358406",
+    "hash": "6419422b60f285e3123dc4d23128f1f8",
+    "content-hash": "9ef364e6185ee5b48fb55300ed9d6438",
     "packages": [
         {
             "name": "bestmomo/scafold",
@@ -145,6 +145,118 @@
             "time": "2015-06-28 21:39:13"
         },
         {
+            "name": "cocur/slugify",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "2b67d4e2b75dbaed2ebefa9eb5683e8940513847"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/2b67d4e2b75dbaed2ebefa9eb5683e8940513847",
+                "reference": "2b67d4e2b75dbaed2ebefa9eb5683e8940513847",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "laravel/framework": "~4.1",
+                "latte/latte": "~2.2",
+                "mockery/mockery": "~0.9",
+                "nette/di": "~2.2",
+                "phpunit/phpunit": "~3.7",
+                "sami/sami": "~1.3",
+                "satooshi/php-coveralls": "0.6.*",
+                "silex/silex": "~1.2",
+                "symfony/dependency-injection": "~2.4",
+                "symfony/http-kernel": "~2.4",
+                "twig/twig": "~1",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                },
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "time": "2015-03-18 08:21:30"
+        },
+        {
+            "name": "cviebrock/eloquent-sluggable",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
+                "reference": "ae6bc5271ca148e35a5c3ed799a9df2bf092728b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/ae6bc5271ca148e35a5c3ed799a9df2bf092728b",
+                "reference": "ae6bc5271ca148e35a5c3ed799a9df2bf092728b",
+                "shasum": ""
+            },
+            "require": {
+                "cocur/slugify": "1.1.*",
+                "illuminate/config": "5.*",
+                "illuminate/database": "5.*",
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.0.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cviebrock\\EloquentSluggable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Viebrock",
+                    "email": "colin@viebrock.ca"
+                }
+            ],
+            "description": "Easy creation of slugs for your Eloquent models in Laravel",
+            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "slug"
+            ],
+            "time": "2015-11-07 17:14:22"
+        },
+        {
             "name": "danielstjules/stringy",
             "version": "1.10.0",
             "source": {
@@ -235,16 +347,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604"
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/0bcb2e79d8571787f18b7eb036ed3d004908e604",
-                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +368,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -298,20 +410,20 @@
                 "singularize",
                 "string"
             ],
-            "time": "2014-12-20 21:24:13"
+            "time": "2015-11-06 14:35:42"
         },
         {
             "name": "frozennode/administrator",
-            "version": "v5.0.6",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FrozenNode/Laravel-Administrator.git",
-                "reference": "9910955e929f085d1c2b5542cb61b8ecd5bca6a8"
+                "reference": "2350237e1bc3462f2ffd5e6397388e94b9660559"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FrozenNode/Laravel-Administrator/zipball/9910955e929f085d1c2b5542cb61b8ecd5bca6a8",
-                "reference": "9910955e929f085d1c2b5542cb61b8ecd5bca6a8",
+                "url": "https://api.github.com/repos/FrozenNode/Laravel-Administrator/zipball/2350237e1bc3462f2ffd5e6397388e94b9660559",
+                "reference": "2350237e1bc3462f2ffd5e6397388e94b9660559",
                 "shasum": ""
             },
             "require": {
@@ -351,7 +463,56 @@
                 "laravel",
                 "laravel-administrator"
             ],
-            "time": "2015-10-29 12:58:32"
+            "time": "2015-11-05 14:24:48"
+        },
+        {
+            "name": "jackpopp/geodistance",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jackpopp/geodistance.git",
+                "reference": "cc8d47911e135528898676060d5235571186b946"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jackpopp/geodistance/zipball/cc8d47911e135528898676060d5235571186b946",
+                "reference": "cc8d47911e135528898676060d5235571186b946",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "*"
+            },
+            "require-dev": {
+                "illuminate/database": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jackpopp\\GeoDistance\\": "src/Jackpopp/GeoDistance"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Hannigan Popp",
+                    "email": "jack@jackpopp.com"
+                }
+            ],
+            "description": "Search for locations within a radius using latitude and longitude values with your eloquent models.",
+            "keywords": [
+                "distance",
+                "kilometers",
+                "latitude",
+                "longitude",
+                "miles",
+                "radius",
+                "search",
+                "searching"
+            ],
+            "time": "2015-07-07 10:58:38"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -628,6 +789,56 @@
             "time": "2015-11-03 16:32:33"
         },
         {
+            "name": "laravelcollective/html",
+            "version": "v5.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "5ad8377968ba3b4da91fc60ca98b2eef4df380fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/5ad8377968ba3b4da91fc60ca98b2eef4df380fc",
+                "reference": "5ad8377968ba3b4da91fc60ca98b2eef4df380fc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/session": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "time": "2015-11-06 18:14:38"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.15",
             "source": {
@@ -710,6 +921,49 @@
                 "storage"
             ],
             "time": "2015-09-30 22:26:59"
+        },
+        {
+            "name": "lodge/postcode-lookup",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Daursu/postcode-lookup.git",
+                "reference": "5281a521f4caceb026fe5f431be5933fbd3d1643"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Daursu/postcode-lookup/zipball/5281a521f4caceb026fe5f431be5933fbd3d1643",
+                "reference": "5281a521f4caceb026fe5f431be5933fbd3d1643",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.x|~5.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Lodge\\Postcode": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Ursu",
+                    "email": "dan@schoolsup.com"
+                }
+            ],
+            "description": "A postcode lookup utility using the Google Maps API, ready to use with Laravel 4.",
+            "time": "2015-02-02 23:57:22"
         },
         {
             "name": "monolog/monolog",
@@ -1809,6 +2063,122 @@
                 "dump"
             ],
             "time": "2015-10-25 17:17:38"
+        },
+        {
+            "name": "teepluss/theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teepluss/laravel-theme.git",
+                "reference": "1f8594d75763a53b0e9972cb674d839f99dce5ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teepluss/laravel-theme/zipball/1f8594d75763a53b0e9972cb674d839f99dce5ff",
+                "reference": "1f8594d75763a53b0e9972cb674d839f99dce5ff",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "twig/twig": "1.x"
+            },
+            "require-dev": {
+                "illuminate/support": ">=5.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teepluss\\Theme\\": "src/"
+                },
+                "classmap": [
+                    "src/Exceptions.php"
+                ],
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Teepluss",
+                    "email": "admin@laravel.in.th"
+                }
+            ],
+            "description": "Theme will help you organize your themes inside Laravel projects easily and maintain its related assets, layouts and partials for the theme in single directory.",
+            "homepage": "https://github.com/teepluss/laravel-theme",
+            "keywords": [
+                "asset",
+                "laravel",
+                "layout",
+                "theme",
+                "twig",
+                "widget"
+            ],
+            "time": "2015-09-03 08:51:41"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
+                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.23-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-11-05 12:49:06"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3083,7 +3453,10 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "bestmomo/scafold": 20
+        "bestmomo/scafold": 20,
+        "teepluss/theme": 20,
+        "jackpopp/geodistance": 20,
+        "lodge/postcode-lookup": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
