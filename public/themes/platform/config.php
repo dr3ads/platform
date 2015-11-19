@@ -67,6 +67,10 @@ return array(
             // {
             //     $view->with('auth', Auth::user());
             // });
+
+            $theme->asset()->usePath()->add('jquery', 'vendor/jquery/jquery.min.js');
+            $theme->asset()->usePath()->add('jquery-validation','vendor/jquery_validate/jquery.validate.min.js', array('jquery'));
+
         },
 
         // Listen on event before render a layout,

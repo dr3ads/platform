@@ -77,6 +77,30 @@ return array(
             'name_field' => 'name',
             'options_sort_field' => 'name',
         ),
+        'domain_id' => array(
+            'type' => 'text',
+            'title' => 'Domain Id',
+        ),
+        /*'location_id' => array(
+            'type' => 'text',
+            'title' => 'Location Id',
+        ),*/
+        'form_id' => array(
+            'type' => 'text',
+            'title' => 'Form Id',
+        ),
+        'affiliate_location_id' => array(
+            'type' => 'text',
+            'title' => 'Affiliate Location Id',
+        ),
+        'vendor_id' => array(
+            'type' => 'text',
+            'title' => 'Vendor Id',
+        ),
+        'campaign_id' => array(
+            'type' => 'text',
+            'title' => 'Campaign Id',
+        ),
        
     ),
     'rules' => array(

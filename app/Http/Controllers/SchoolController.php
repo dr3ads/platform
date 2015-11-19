@@ -23,6 +23,23 @@ class SchoolController extends BaseController
         $data['school'] = $school;
         $data['fields'] = $school->fields;
 
+        foreach($data['fields'] as $field){
+            if($field->validation != ''){
+                $ruleItem = explode('|', $field->validation);
+
+                foreach($ruleItem as $item){
+                    $fineRule = array();
+                    $explodedItem = explode(':', $item);
+                    $fineRule[$explodedItem[0]] = $explodedItem[1];
+                    $rule[$field->slug] = $fineRule;
+                }
+
+            }
+        }
+
+
+        $data['validation'] = json_encode($rule);
+
         return $this->theme->scope('school.detail', $data)->render();
     }
 
@@ -30,3 +47,4 @@ class SchoolController extends BaseController
         echo "test".$id;
     }
 }
+

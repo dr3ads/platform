@@ -12,7 +12,9 @@ class AlterFieldsTblAddSlug extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('fields', function($table){
+            $table->string('slug');
+        });
     }
 
     /**
@@ -22,6 +24,8 @@ class AlterFieldsTblAddSlug extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('fields', function($table){
+            $table->dropColumn('slug');
+        });
     }
 }

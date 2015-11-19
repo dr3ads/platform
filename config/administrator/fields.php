@@ -64,7 +64,12 @@ return array(
         'options' => array(
             'title' => 'Options',
             'description' => 'Select options in JSON format',
-            'type' => 'textarea'
+            'type' => 'textarea',
+        ),
+
+        'validation' => array(
+            'title' => 'Validation Rules',
+            'type' => 'text'
         ),
        
     ),
