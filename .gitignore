@@ -4,6 +4,7 @@ Homestead.yaml
 Homestead.json
 .env
 composer.lock
+error_log
 .idea
 .idea/*
 .DS_Store
