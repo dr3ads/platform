@@ -3,7 +3,7 @@
 use Platform\Http\Controllers\BaseController;
 use Platform\Models\School;
 use Theme;
-//use Platform\Http\Requests;
+use Illuminate\Http\Request;
 
 class SchoolController extends BaseController
 {
@@ -42,6 +42,20 @@ class SchoolController extends BaseController
 
         return $this->theme->scope('school.detail', $data)->render();
     }
+
+    public function schoolPost(Request $request)
+    {
+        $data = $request->all();
+
+        $request = [
+            'url' => 'http://webservices.keypathpartners.com/ILM/default.ashx?IsTestLead=true',
+            'params' => $data,
+        ];
+
+        $response = HttpClient::post($request);
+        dd($response);
+    }
+
 
     public function test($id){
         echo "test".$id;

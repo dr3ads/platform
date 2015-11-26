@@ -26,10 +26,12 @@ class AlterSchoolTblAddLocationFields extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         Schema::table('schools', function($table){
             $table->dropColumn('zipcode');
             $table->dropColumn('lat');
-            $table->dropColumn('long');
+            $table->dropColumn('lng');
         });
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

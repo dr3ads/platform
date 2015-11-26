@@ -1,7 +1,7 @@
 <h1>{!! $school->name !!}</h1>
 
 <div class="form-wrap">
-    {!! Form::open(array('id' => 'school-form','url' => 'http://webservices.keypathpartners.com/ILM/default.ashx?IsTestLead=true','method' => 'get')) !!}}
+    {!! Form::open(array('id' => 'school-form')) !!}}
         {!! Form::hidden('id', $school->id) !!}
         {!! Form::hidden('vendorID', $school->vendor_id) !!} <!--fixed -->
         {!! Form::hidden('DomainID', $school->domain_id) !!}

@@ -13,7 +13,8 @@
         "laravelcollective/html": "~5.0",
         "cviebrock/eloquent-sluggable": "^3.1",
         "jackpopp/geodistance": "dev-master",
-        "lodge/postcode-lookup": "dev-master"
+        "lodge/postcode-lookup": "dev-master",
+        "vinelab/http": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -151,6 +151,7 @@ return [
         'Cviebrock\EloquentSluggable\SluggableServiceProvider',
         'Collective\Html\HtmlServiceProvider',
         'Lodge\Postcode\PostcodeServiceProvider',
+        'Vinelab\Http\HttpServiceProvider',
 
     ],
 
