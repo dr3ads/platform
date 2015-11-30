@@ -11,7 +11,7 @@
 
 
 <div class="form-wrap">
-    {!! Form::open(array('id' => 'school-form')) !!}}
+    {!! Form::open(array('id' => 'school-form')) !!}
         {!! Form::hidden('id', $school->id) !!}
         {!! Form::hidden('vendorID', $school->vendor_id) !!} <!--fixed -->
         {!! Form::hidden('DomainID', $school->domain_id) !!}
