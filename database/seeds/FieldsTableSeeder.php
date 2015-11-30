@@ -24,8 +24,8 @@ class FieldsTableSeeder extends Seeder
             ['name' => 'City', 'slug' => 'city', 'type' => 'text', 'options' => '','validation' => 'required:true'],
             ['name' => 'State', 'slug' => 'state', 'type' => 'select', 'options' => json_encode( $this->getStateList() ),'validation' => 'required:true'],
             ['name' => 'Email','slug' => 'email', 'type' => 'text', 'options' => '', 'validation' => 'required:true|email:true'],
-            ['name' => 'ZipCode', 'slug' => 'zip', 'type' => 'text', 'options' => '', 'validation' => 'required|minLength:5|maxLength:6'],
-            ['name' => 'Highschool Graduation Year','slug' => 'gradYear', 'type' => 'text', 'options' => '', 'validation' => 'required:true|number: true'],
+            ['name' => 'ZipCode', 'slug' => 'StateZip', 'type' => 'text', 'options' => '', 'validation' => 'required:true|minLength:5|maxLength:6'],
+            ['name' => 'Highschool Graduation Year','slug' => 'gradyear', 'type' => 'text', 'options' => '', 'validation' => 'required:true|number: true'],
             ['name' => 'Preferred Location',
                 'slug' => 'locationID',
                 'type' => 'select',
@@ -52,17 +52,6 @@ class FieldsTableSeeder extends Seeder
                     'Afternoon' => 'Afternoon',
                     'Everything' => 'Everything',
                 )),'validation' => 'required:true'],
-/*            ['name' => 'Highest Level of Education',
-                'slug' => 'edulevel',
-                'type' => 'select',
-                'options' => array(
-                    "No HS Diploma/GED",
-                    "HS Grad / GED",
-                    "Associate's Degree",
-                    "Bachelor's Degree",
-                    "Master's Degree",
-                    "Doctorate Degree",
-                ),'validation' => 'required:true'],*/
             ['name' => 'When are you interested in beginning classes?',
                 'slug' => 'class',
                 'type' => 'select',
@@ -86,9 +75,13 @@ class FieldsTableSeeder extends Seeder
                     'Yes' => 'Yes',
                     'No' => 'No'
                 )),'validation' => 'required:true'],
-            ['name' => 'Day Phone Number', 'type' => 'text', 'options' => '', 'validation' => 'required:true|number: true'],
-            ['name' => 'Eve Phone Number', 'type' => 'text', 'options' => '', 'validation' => 'required:true|number: true'],
-            ['name' => 'Night Phone Number', 'type' => 'text', 'options' => '', 'validation' => 'required:true|number: true'],
+            ['name' => 'Day Phone Number','slug' => 'dayphone', 'type' => 'text', 'options' => '', 'validation' => 'required:true|number: true'],
+            ['name' => 'Night Phone Number', 'slug' => 'evephone', 'type' => 'text', 'options' => '', 'validation' => 'required:true|number: true'],
+            ['name' => 'Allen School Preferred Location', 'slug' => 'LocationId', 'type' => 'select', 'options' => json_encode(array('39314' => 'Allen School - Brooklyn','39312' => 'Allen School - Jamaica', '39313' => 'Allen School Phoenix')), 'validation' => 'required:true'],
+            ['name' => 'Allen School Program Of Interest Brooklyn', 'slug' => 'CurriculumID', 'type' => 'select', 'options' => json_encode(array( '538655' => 'Medical Assistant - Certificate' )), 'validation' => 'required:true'],
+            ['name' => 'Allen School Program Of Interest Jamaica', 'slug' => 'CurriculumID', 'type' => 'select', 'options' => json_encode(array( '538653' => 'Medical Assistant - Certificate' )), 'validation' => 'required:true'],
+            ['name' => 'Allen School Program Of Interest Phoenix', 'slug' => 'CurriculumID', 'type' => 'select', 'options' => json_encode(array( '538654' => 'Medical Assistant - Certificate' )), 'validation' => 'required:true'],
+            ['name' => 'Check here to receive SMS (Text) notifications from Allen School.', 'slug' => 'Text_Opt', 'type' => 'check', 'options' => true, 'validation' => ''],
 
         ];
         foreach($fields as $field){

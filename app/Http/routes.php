@@ -15,7 +15,7 @@ Route::get('/', 'SearchController@DoSearch');
 
 Route::get('search', 'SearchController@DoSearch');
 Route::post('search', 'SearchController@PostSearch');
-Route::get('school/{id}', 'SchoolController@SchoolForm');
+Route::get('school/{id}', ['uses' => 'SchoolController@SchoolForm','as' => 'searchSchool']);
 Route::post('school/{id}', 'SchoolController@SchoolPost');
 
 // Authentication routes...
