@@ -19,9 +19,14 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insertGetId([
             'email' => 'arnel.basiliote@gmail.com',
             'password' => bcrypt('123qwerty'),
-        ]);	
-        
-     
-      
+        ]);
+
+        DB::table('users')->insertGetId([
+            'email' => 'randysquid@gmail.com',
+            'password' => bcrypt('123qwerty'),
+        ]);
+
+
+
     }
 }

@@ -31,7 +31,7 @@
 				<a class="navbar-brand" href="#">Laravel</a>
 			</div>
 
-			
+
 		</div>
 	</nav>
 
